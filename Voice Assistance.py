@@ -176,7 +176,7 @@ if __name__ == '__main__':
             speak(pyjokes.get_joke())
 
         elif 'calculate' in query:
-            app_id = "LRGWK5-E5VL4GTTAH"
+            app_id = "YOUR OWN API KEY"
             client = wolframalpha.Client(app_id)
             indx = query.lower().split().index('calculate')
             query = query.split()[indx + 1:]
@@ -220,7 +220,7 @@ if __name__ == '__main__':
                     category = "sport"
                 else:
                     category = "Technology"
-                API_KEY = "2141b2ccd45543bb891ea29b95d40ca1"
+                API_KEY = "YOUR OWN API KEY"
                 api_url = f"https://newsapi.org/v2/top-headlines?country=in&category={category}&apiKey={API_KEY}"
                 speak(f"Please wait while I load the {category} headlines for you")
                 top_news = rq.get(api_url).text
@@ -297,7 +297,7 @@ if __name__ == '__main__':
             speak(Name)
 
         elif 'weather' in query:
-            api_key = "0ccf4d9c7c30b20269a20552ea6f7fb2"
+            api_key = "YOUR OWN API KEY"
             base_url = "https://openweathermap.org/current"
             speak("City Name")
             print("City Name: ")
@@ -318,8 +318,8 @@ if __name__ == '__main__':
                 speak("City not found!")
 
         elif "send message" in query:
-            account_sid = "AC86b277c8bfdbadcccf64de5cd287734c"
-            auth_token = "19364908bbc7fe5a0d6776e9c28a6deb"
+            account_sid = "YOUR OWN ACCOUNT SID"
+            auth_token = "YOUR OWN AUTHENTICATION TOKEN"
             client = Client(account_sid, auth_token)
             message = client.messages \
                 .create(
