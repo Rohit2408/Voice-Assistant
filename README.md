@@ -12,7 +12,9 @@ This is a simple voice assistant program so it can only respond to commands whic
 - Requests --> ```pip install requests ``` == Requests is used for making GET and POST requests
 - BeautifulSoup --> ```pip install beautifulsoup4``` == Beautiful Soup is a library that makes it easy to scrape information from web pages
 
-*Make sure you use your own API key for the modules
+*Make sure you use your own API key for the modules and do install the above mentioned modules before running the program*
+*You have to create your own account in <b>TWILIO</b>, <b>WolframAlpha</b> to get your own API key*
+*For the weather module search for open weather api in google and create an account to get your own API*
 
 ### @Author:
 
