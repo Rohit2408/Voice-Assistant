@@ -160,7 +160,7 @@ if __name__ == '__main__':
             exit()
 
         elif 'calculate' in query:
-            app_id = "LRGWK5-E5VL4GTTAH"
+            app_id = "YOUR OWN API"
             client = wolframalpha.Client(app_id)
             indx = query.lower().split().index('calculate')
             query = query.split()[indx + 1:]
@@ -193,7 +193,7 @@ if __name__ == '__main__':
                 elif 'technology' in query:
                     category = "Technology"
                     speak(category)
-                API_KEY = "2141b2ccd45543bb891ea29b95d40ca1"
+                API_KEY = "YOUR OWN API"
                 api_url = f"https://newsapi.org/v2/top-headlines?country=in&category={category}&apiKey={API_KEY}"
                 speak(f"Please wait while I load the {category} headlines for you")
                 top_news = rq.get(api_url).text
